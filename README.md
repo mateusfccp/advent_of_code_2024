@@ -20,3 +20,5 @@ data/
 
 Where `puzzle_1` and `puzzle_2` are the input given for the first and second
 puzzles of the day, respectively.
+
+![This repository is considered public domain.](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)
