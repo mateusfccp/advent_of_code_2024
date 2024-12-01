@@ -9,10 +9,10 @@ The folder should have the following structure:
 
 ```
 data/
-  day_01/
+  day_1/
     puzzle_1
 	puzzle_2
-  day_02/
+  day_2/
     puzzle_1
 	puzzle_2
   ...
