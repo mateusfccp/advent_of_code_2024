@@ -9,17 +9,12 @@ The folder should have the following structure:
 
 ```
 data/
-  day_1/
-    puzzle_1
-	puzzle_2
-  day_2/
-    puzzle_1
-	puzzle_2
+  day_1
+  day_2
   ...
 ```
 
-Where `puzzle_1` and `puzzle_2` are the input given for the first and second
-puzzles of the day, respectively.
+Where `day_n` is the input for the n-th day.
 
 This repository provides a `data` folder with the input I received for each
 day.

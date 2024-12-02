@@ -20,7 +20,7 @@ void main(List<String> arguments) async {
   stdout.writeln('Solving challenges from $dataDirectory...\n');
 
   Future<void> solveDay<T>(int day, int puzzleNumber, PuzzleSolver<T> solver) async {
-    final input = await File('$dataDirectory/day_$day/puzzle_$puzzleNumber').readAsString();
+    final input = await File('$dataDirectory/day_$day').readAsString();
     final result = solver(input);
     stdout.writeln('Day $day, puzzle $puzzleNumber: $result');
   }
