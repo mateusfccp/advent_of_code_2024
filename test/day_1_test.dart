@@ -37,35 +37,4 @@ void main() {
       [4, 3, 5, 3, 9, 3],
     );
   });
-
-  test("'numberParser' should parse an integer with any size.", () {
-    expect(
-      numberParser.parse('123').value,
-      equals(123),
-    );
-    expect(
-      numberParser.parse('1234567890').value,
-      equals(1234567890),
-    );
-    expect(
-      () => numberParser.parse('a').value,
-      throwsException,
-    );
-  });
-
-  test("'lineParser' should parse an input line with at most two integers.", () {
-    expect(
-      lineParser.parse('1 2').value,
-      equals((1, 2)),
-    );
-    expect(
-      lineParser.parse('123  456').value,
-      equals((123, 456)),
-    );
-    expect(() => lineParser.parse('1 4 3').value, throwsException);
-    expect(
-      () => lineParser.parse('1 a').value,
-      throwsException,
-    );
-  });
 }

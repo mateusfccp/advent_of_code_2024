@@ -1,7 +1,7 @@
 import 'dart:convert';
 
+import 'package:advent_of_code_2024/src/parsers.dart';
 import 'package:meta/meta.dart';
-import 'package:petitparser/petitparser.dart';
 
 import 'src/iterable.dart';
 import 'src/num.dart';
@@ -45,9 +45,9 @@ int puzzle2(String input) {
   final firstColumn = <int>[];
   final secondColumn = <int>[];
 
-  final lines = _lineSplitter.convert(input);
+  final lines = LineSplitter.split(input);
   for (final line in lines) {
-    final (first, second) = lineParser.parse(line).value;
+    final [first, second] = lineOfNumbersParser.parse(line).value;
 
     firstColumn.add(first);
     secondColumn.add(second);
@@ -55,11 +55,3 @@ int puzzle2(String input) {
 
   return (firstColumn, secondColumn);
 }
-
-const _lineSplitter = LineSplitter();
-
-@visibleForTesting
-final numberParser = digit().plus().flatten().trim().map(int.parse);
-
-@visibleForTesting
-final lineParser = numberParser.times(2).map((numbers) => (numbers[0], numbers[1])).end();
