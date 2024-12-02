@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:advent_of_code_2024/day_1.dart' as day_1;
+import 'package:advent_of_code_2024/day_2.dart' as day_2;
 
 /// A function that solves a puzzle given an input.
 typedef PuzzleSolver<T> = T Function(String input);
@@ -27,4 +28,8 @@ void main(List<String> arguments) async {
   // Day 1
   await solveDay(1, 1, day_1.puzzle1);
   await solveDay(1, 2, day_1.puzzle2);
+
+  // Day 2
+  await solveDay(2, 1, day_2.puzzle1);
+  await solveDay(2, 2, day_2.puzzle2);
 }
