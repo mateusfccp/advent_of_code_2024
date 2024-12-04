@@ -19,7 +19,7 @@ void main() {
     expect(puzzle1(input), equals(18));
   });
 
-  test('Puzzle 2 on input should return .', () {
+  test('Puzzle 2 on input should return 9.', () {
     expect(puzzle2(input), equals(9));
   });
 
