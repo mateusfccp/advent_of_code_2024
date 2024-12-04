@@ -24,7 +24,7 @@ void main() {
   });
 
   test(
-    "'countGenerally' should count the number of occurrences of a given sequence inside other",
+    "'countMatches' should count the number of occurrences of a given sequence inside other",
     () {
       final pattern = 'XMAS'.codeUnits;
 
