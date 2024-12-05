@@ -15,12 +15,12 @@ MXMXAXMASX
 ''';
 
 void main() {
-  test('Puzzle 1 on input should return 18.', () {
-    expect(puzzle1(input), equals(18));
+  test('Part 1 on input should return 18.', () {
+    expect(part1(input), equals(18));
   });
 
-  test('Puzzle 2 on input should return 9.', () {
-    expect(puzzle2(input), equals(9));
+  test('Part 2 on input should return 9.', () {
+    expect(part2(input), equals(9));
   });
 
   test(

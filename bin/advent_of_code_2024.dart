@@ -5,7 +5,7 @@ import 'package:advent_of_code_2024/day_2.dart' as day_2;
 import 'package:advent_of_code_2024/day_3.dart' as day_3;
 import 'package:advent_of_code_2024/day_4.dart' as day_4;
 
-/// A function that solves a puzzle given an input.
+/// A function that solves a part given an input.
 typedef PuzzleSolver<T> = T Function(String input);
 
 void main(List<String> arguments) async {
@@ -21,25 +21,25 @@ void main(List<String> arguments) async {
 
   stdout.writeln('Solving challenges from $dataDirectory...\n');
 
-  Future<void> solveDay<T>(int day, int puzzleNumber, PuzzleSolver<T> solver) async {
+  Future<void> solveDay<T>(int day, int partNumber, PuzzleSolver<T> solver) async {
     final input = await File('$dataDirectory/day_$day').readAsString();
     final result = solver(input);
-    stdout.writeln('Day $day, puzzle $puzzleNumber: $result');
+    stdout.writeln('Day $day, part $partNumber: $result');
   }
 
   // Day 1
-  await solveDay(1, 1, day_1.puzzle1);
-  await solveDay(1, 2, day_1.puzzle2);
+  await solveDay(1, 1, day_1.part1);
+  await solveDay(1, 2, day_1.part2);
 
   // Day 2
-  await solveDay(2, 1, day_2.puzzle1);
-  await solveDay(2, 2, day_2.puzzle2);
+  await solveDay(2, 1, day_2.part1);
+  await solveDay(2, 2, day_2.part2);
 
   // Day 3
-  await solveDay(3, 1, day_3.puzzle1);
-  await solveDay(3, 2, day_3.puzzle2);
+  await solveDay(3, 1, day_3.part1);
+  await solveDay(3, 2, day_3.part2);
 
   // Day 4
-  await solveDay(4, 1, day_4.puzzle1);
-  await solveDay(4, 2, day_4.puzzle2);
+  await solveDay(4, 1, day_4.part1);
+  await solveDay(4, 2, day_4.part2);
 }

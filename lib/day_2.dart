@@ -3,13 +3,13 @@ import 'dart:convert';
 import 'package:advent_of_code_2024/src/parsers.dart';
 import 'package:meta/meta.dart';
 
-/// Solves the first puzzle of day 2.
-int puzzle1(String input) => _solvePuzzle(input);
+/// Solves the first part of day 2.
+int part1(String input) => _solvePart(input);
 
-/// Solves the first puzzle of day 2.
-int puzzle2(String input) => _solvePuzzle(input, enableProblemDampener: true);
+/// Solves the first part of day 2.
+int part2(String input) => _solvePart(input, enableProblemDampener: true);
 
-int _solvePuzzle(String input, {bool enableProblemDampener = false}) {
+int _solvePart(String input, {bool enableProblemDampener = false}) {
   final lines = LineSplitter.split(input);
   final reports = [
     for (final line in lines) //

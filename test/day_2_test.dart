@@ -11,16 +11,16 @@ const input = '''
 ''';
 
 void main() {
-  test('Puzzle 1 on input should return 2.', () {
+  test('Part 1 on input should return 2.', () {
     expect(
-      puzzle1(input),
+      part1(input),
       equals(2),
     );
   });
 
-  test('Puzzle 2 on input should return 4.', () {
+  test('Part 2 on input should return 4.', () {
     expect(
-      puzzle2(input),
+      part2(input),
       equals(4),
     );
   });

@@ -1,10 +1,10 @@
 import 'package:petitparser/petitparser.dart';
 
-/// Solves the first puzzle of day 3.
-int puzzle1(String input) => corruptedOperationsParser.parse(input).value;
+/// Solves the first part of day 3.
+int part1(String input) => corruptedOperationsParser.parse(input).value;
 
-/// Solves the first puzzle of day 3.
-int puzzle2(String input) {
+/// Solves the first part of day 3.
+int part2(String input) {
   return corruptedWithDontsParser.parse(input).value.whereType<int>().reduce((a, b) => a + b);
 }
 

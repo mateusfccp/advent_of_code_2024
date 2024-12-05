@@ -2,20 +2,20 @@ import 'package:advent_of_code_2024/day_3.dart';
 import 'package:test/test.dart';
 
 void main() {
-  test('Puzzle 1 on input should return 161.', () {
+  test('Part 1 on input should return 161.', () {
     const input = 'xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))';
 
     expect(
-      puzzle1(input),
+      part1(input),
       equals(161),
     );
   });
 
-  test('Puzzle 2 on input should return 48.', () {
+  test('Part 2 on input should return 48.', () {
     const input = "xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5))";
 
     expect(
-      puzzle2(input),
+      part2(input),
       equals(48),
     );
   });

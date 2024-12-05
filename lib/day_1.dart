@@ -6,8 +6,8 @@ import 'package:meta/meta.dart';
 import 'src/iterable.dart';
 import 'src/num.dart';
 
-/// Solves the first puzzle of day 1.
-int puzzle1(String input) {
+/// Solves the first part of day 1.
+int part1(String input) {
   final lists = parseInput(input);
   final first = [...lists.$1]..sort();
   final second = [...lists.$2]..sort();
@@ -23,8 +23,8 @@ int puzzle1(String input) {
   return sum;
 }
 
-/// Solves the second puzzle of day 1.
-int puzzle2(String input) {
+/// Solves the second part of day 1.
+int part2(String input) {
   final lists = parseInput(input);
   final iterator = lists.$1.iterator;
 
