@@ -6,7 +6,7 @@ import 'src/list.dart';
 
 final _pattern = 'XMAS'.codeUnits;
 
-/// Solves the first puzzle of day 2.
+/// Solves the first puzzle of day 4.
 int puzzle1(String input) {
   final parsedInput = [
     for (final line in LineSplitter.split(input)) line.codeUnits,
@@ -43,7 +43,7 @@ final _matches = [
   ],
 ];
 
-/// Solves the first puzzle of day 2.
+/// Solves the first puzzle of day 4.
 int puzzle2(String input) {
   final parsedInput = [
     for (final line in LineSplitter.split(input)) line.split(''),
