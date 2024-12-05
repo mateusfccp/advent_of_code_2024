@@ -54,6 +54,7 @@ int part2(String input) {
 /// Returns the first invalid item in the update list.
 ///
 /// If the update list is valid, returns `null`.
+@visibleForTesting
 int? getUpdateFirstInvalidItem(List<int> update, Map<int, List<int>> beforenessMap) {
   for (int i = 1; i < update.length; i++) {
     final currentPage = update[i];
@@ -69,6 +70,7 @@ int? getUpdateFirstInvalidItem(List<int> update, Map<int, List<int>> beforenessM
 }
 
 /// Rectifies the update list.
+@visibleForTesting
 void rectifyUpdate(
   List<int> update,
   Map<int, List<int>> beforenessMap, {
